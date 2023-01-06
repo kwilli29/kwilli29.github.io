@@ -1,0 +1,105 @@
+* {   /* Reset the margin and padding for all the elements */
+   margin: 0px;
+   padding: 0px;
+}
+
+/* STYLING FOR TAGS */
+body { /* this will be the default styling in the body unless it is specified otherwise */
+    font-family: Trebuchet MS, Sans Serif;
+    background-color: #304C89;
+    color: #E8E5DA;
+}
+header {
+    color: white; /* make text in header white */
+    background-image: url('https://cdn.pixabay.com/photo/2019/07/29/10/35/hong-kong-4370341_960_720.jpg');
+    text-align: center; /* center all text in the header */;
+    padding: 4em; /* there will be 2em of space between the text & edges of the header on all sides */
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    background-repeat: no-repeat;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    padding: 1em 2em;
+}
+
+main{
+    padding: 1em;
+}
+/* EXAMPLE PAGE STYLING */
+
+#survey { /* changes default background color for example page*/
+  background-color: #9EB7E5;
+  text-align: center;
+}
+#gameQuestion{
+  padding: 1em;
+}
+.ansBtns{ /* class, not id, so it can apply to both buttons */
+  font-weight: bold; /* makes text inside button bold */
+  color: #E8E8E8 ;
+  /* background-color: #CB88F9;
+  border: 1px solid #CB88F9;  */
+  margin: 5px; /* space around the buttons */
+  padding: 0 12px; /* space inside the buttons */
+  height: 25px; /* height of the buttons */
+  border-radius: 5px;
+}
+
+/* PRACTICE PAGE STYLING - Mostly up to the user */
+#pract{
+    background-color: #F1DAEB;
+    color: #857E7B;
+
+}
+.quest{
+    text-align: left;
+    padding: 0em 2em;
+}
+.hint {
+    font-size: 12px;
+    text-align: left;
+    padding: 0em;
+    margin-left: 15px;
+}
+
+.carousel-item > img{
+  background-color: #304C89;
+  width: 100%;
+  height: 600px;
+}
+#carouselExampleIndicators{
+  margin: -16px 0 0 0;
+}
+
+/* STYLE NAV BAR */
+
+nav > ul{
+  list-style-type: none;
+  overflow: hidden;
+  padding: 1em;
+  text-align: center;
+  background-color: #CDC392;
+}
+nav > ul > li {
+  display: inline;
+}
+nav > ul > li a {
+  display: inline;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+  padding: 2em;
+}
+nav > ul > li a:hover {
+  background-color: #648DE5;
+}
+
+/*************************/
+.like-btn:hover {
+    font-size: 25px;
+}

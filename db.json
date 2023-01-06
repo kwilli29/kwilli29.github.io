@@ -1,0 +1,10 @@
+{
+  "post":[
+    {
+      "id": 1,
+      "title": "setup",
+      "likes": 4,
+      "image": "https://cdn.pixabay.com/photo/2020/12/23/06/34/smiley-5854084_960_720.png"
+    }
+  ]
+}
