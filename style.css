@@ -36,7 +36,7 @@ main{
   background-color: #9EB7E5;
   text-align: center;
 }
-#gameQuestion{
+#postCard{
   padding: 1em;
 }
 .ansBtns{ /* class, not id, so it can apply to both buttons */

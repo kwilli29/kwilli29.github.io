@@ -26,6 +26,29 @@ $('.carousel').carousel();
 
 //////////////
 
+asynch function populate() {
+  const requestURL = 'https://raw.githubusercontent.com/kwilli29/kwilli29.github.io/main/db.json';
+  const request = new Request(requestURL);
+
+  const response = await fetch(request);
+  const posts = await response.json();
+
+  populatePosts(posts);
+
+}
+
+function populatePosts(obj){
+    const section = document.querySelector('section');
+    const posts = obj.posts;
+
+    for (const post of posts) {
+        
+
+    }
+
+}
+
+//////////////
 document.addEventListener("DOMContentLoaded", function(){
   fetch('https://build-practice.kellywilliams4.repl.co/posts.html#')
   .then(resource => resource.json())
