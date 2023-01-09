@@ -1,16 +1,16 @@
 {
-  "posts": [
+  "posts" : [
     {
-      "post": 1,
-      "title": "smiley",
-      "likes": 4,
-      "src": "https://cdn.pixabay.com/photo/2020/12/23/06/34/smiley-5854084_960_720.png"
+      "post_id" : 1,
+      "title" : "smiley",
+      "likes" : 4,
+      "src" : "https://cdn.pixabay.com/photo/2020/12/23/06/34/smiley-5854084_960_720.png"
     },
     {
-      "post": 2,
-      "title": "saxophone",
-      "likes": 5,
-      "src": "https://cdn.pixabay.com/photo/2021/07/25/23/41/music-6492983_960_720.png"
-    },
+      "post_id" : 2,
+      "title" : "saxophone",
+      "likes" : 5,
+      "src" : "https://cdn.pixabay.com/photo/2021/07/25/23/41/music-6492983_960_720.png"
+    }
   ]
 }
