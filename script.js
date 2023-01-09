@@ -31,7 +31,7 @@ function populatePosts(obj){
       const Div_Card = document.createElement('div');
       Div_Card.className = "card";
 
-      const Img = image_create(posts.src, posts.title); // new Image(), createImg fcn?
+      const Img = img_create(posts.src, posts.title); // new Image(), createImg fcn?
       Img.className = "card-img-top";
 
       const Div_Body = document.createElement('div');
@@ -67,7 +67,7 @@ function populatePosts(obj){
 }
 
 function img_create(src, title) {
-    var img = IEWIN ? new Image() : document.createElement("img");
+    var img = new Image(); // : document.createElement("img");
     img.src = src;
     if ( title != null ) img.title = title;
     return img;
