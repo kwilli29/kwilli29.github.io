@@ -22,7 +22,7 @@ function populatePosts(obj){
 
     for (const post of posts) {
 
-      const Div_Row = document.createElemt("div");
+      const Div_Row = document.createElement("div");
       Div_Row.className = "row";
 
       const Div_Col = document.createElement('div');
