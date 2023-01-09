@@ -1,13 +1,13 @@
 * {   /* Reset the margin and padding for all the elements */
-   margin: 0px;
+   margin:  0px;
    padding: 0px;
 }
 
 /* STYLING FOR TAGS */
 body { /* this will be the default styling in the body unless it is specified otherwise */
     font-family: Trebuchet MS, Sans Serif;
-    background-color: #304C89;
-    color: #E8E5DA;
+    background-color: #BA324F;
+    color: #CCE6F4;
 }
 header {
     color: white; /* make text in header white */
@@ -33,17 +33,16 @@ main{
 /* EXAMPLE PAGE STYLING */
 
 #survey { /* changes default background color for example page*/
-  background-color: #9EB7E5;
+  background-color: #4BA3C3;
   text-align: center;
 }
-#postCard{
+#postFeed{
   padding: 1em;
 }
+
 .ansBtns{ /* class, not id, so it can apply to both buttons */
   font-weight: bold; /* makes text inside button bold */
-  color: #E8E8E8 ;
-  /* background-color: #CB88F9;
-  border: 1px solid #CB88F9;  */
+  color: #E8E8E8;
   margin: 5px; /* space around the buttons */
   padding: 0 12px; /* space inside the buttons */
   height: 25px; /* height of the buttons */
@@ -52,7 +51,7 @@ main{
 
 /* PRACTICE PAGE STYLING - Mostly up to the user */
 #pract{
-    background-color: #F1DAEB;
+    background-color: #CCE6F4;
     color: #857E7B;
 
 }
@@ -83,7 +82,7 @@ nav > ul{
   overflow: hidden;
   padding: 1em;
   text-align: center;
-  background-color: #CDC392;
+  background-color: #175676;
 }
 nav > ul > li {
   display: inline;
@@ -91,7 +90,7 @@ nav > ul > li {
 nav > ul > li a {
   display: inline;
   text-decoration: none;
-  color: white;
+  color: #CCE6F4;
   font-size: 1.3em;
   padding: 2em;
 }

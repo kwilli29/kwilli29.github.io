@@ -10,8 +10,6 @@ async function populate() {
   const response = await fetch(request);
   const posts = await response.json();
 
-  console.log(posts);
-
   populatePosts(posts);
 
 }
@@ -23,7 +21,7 @@ function populatePosts(obj){
     for (const post of posts) {
 
       const Div_Row = document.createElement("div");
-      Div_Row.className = "row";
+      Div_Row.className = "row justify-content-center";
 
       const Div_Col = document.createElement('div');
       Div_Col.className = "col-sm-6";
@@ -47,9 +45,10 @@ function populatePosts(obj){
       Span.className = "likes";
 
       const LikeButton = document.createElement('button');
-      LikeButton.className = "like-button";
+      LikeButton.innerHTML = " <3 ";
+      LikeButton.className = "like-button btn btn-primary";
 
-      Span.textContext = `${posts.likes} likes`;
+      Span.innerHTML = `    ${post.likes} likes`;
 
       Div_Row.appendChild(Div_Col);
       Div_Col.appendChild(Div_Card);
@@ -57,8 +56,10 @@ function populatePosts(obj){
       Div_Card.appendChild(Div_Body);
       Div_Body.appendChild(Para);
       Div_Body.appendChild(Div_Like);
-      Div_Like.appendChild(Span);
       Div_Like.appendChild(LikeButton);
+      Div_Like.appendChild(Span);
+
+      // add event listener to increment like button function?
 
       section.appendChild(Div_Row);
     }
@@ -94,12 +95,12 @@ function addPictureToPage(data){
   })
 }
 
-function incrementLikes(image){
+function incrementLikes(post){
   let likes = 0;
   fetch('https://build-practice.kellywilliams4.repl.co/posts/${post.id}')
   .then(resource => resource.json())
   .then((data) => {
-    likes = data.likes
+    likes = data.likes;
   })
 
   let newLikes = likes + 1;
@@ -111,11 +112,11 @@ function incrementLikes(image){
         Accept: "application/json"
       },
       body: JSON.stringify({
-          "likes": newLikes
+          "likes": newLikes;
       })
   });
 
-  let likesText = `${newLikes} likes`;
+  let likesText = `    ${newLikes} likes`;
 
   return likesText;
 
