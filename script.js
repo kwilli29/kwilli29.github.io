@@ -3,7 +3,7 @@
 
 //////////////
 
-async function populate() {
+/* async function populate() {
   const requestURL = 'https://raw.githubusercontent.com/kwilli29/kwilli29.github.io/main/db.json';
   const request = new Request(requestURL);
 
@@ -20,7 +20,7 @@ function populatePosts(obj){
 
     for (const post of posts) {
 
-      const Div_Row = document.createElement("div");
+      const Div_Row = document.createElement('div');
       Div_Row.className = "row justify-content-center";
 
       const Div_Col = document.createElement('div');
@@ -59,9 +59,30 @@ function populatePosts(obj){
       Div_Like.appendChild(LikeButton);
       Div_Like.appendChild(Span);
 
-      // add event listener to increment like button function?
-
       section.appendChild(Div_Row);
+
+      LikeButton.onclick = function(){
+        console.log('click');
+        newLikes = post.likes + 1;
+        Span.innerHTML = `    ${newLikes} likes`;
+
+        const data = { 'likes' : newLikes };
+
+        fetch('file:///Users/Kelly/Documents/GitHub/kwilli29.github.io/posts.html', {
+          method: 'PUT', // or 'PUT'
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log('Success:', data);
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+      };
     }
 }
 
