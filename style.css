@@ -6,12 +6,14 @@
 /* STYLING FOR TAGS */
 body { /* this will be the default styling in the body unless it is specified otherwise */
     font-family: Trebuchet MS, Sans Serif;
-    background-color: #BA324F;
-    color: #CCE6F4;
+    background-color: #ECD8DE;
+    color: #150A7A;
 }
+
 header {
     color: white; /* make text in header white */
-    background-image: url('https://cdn.pixabay.com/photo/2019/07/29/10/35/hong-kong-4370341_960_720.jpg');
+    font-weight: bold;
+    background-image: url('assets/harbor_pan.png');
     text-align: center; /* center all text in the header */;
     padding: 4em; /* there will be 2em of space between the text & edges of the header on all sides */
     position: relative;
@@ -30,10 +32,20 @@ p {
 main{
     padding: 1em;
 }
-/* EXAMPLE PAGE STYLING */
+
+.blogTitle{
+  text-align: center;
+  font-weight: bold;
+  color: #653180;
+}
+.blogBody{
+  text-align: justify;
+  color: #8C66A0;
+  margin: 0 10%;
+}
 
 #survey { /* changes default background color for example page*/
-  background-color: #4BA3C3;
+  background-color: #D1A7A0;
   text-align: center;
 }
 #postFeed{
@@ -43,8 +55,10 @@ main{
 .ansBtns{ /* class, not id, so it can apply to both buttons */
   font-weight: bold; /* makes text inside button bold */
   color: #E8E8E8;
+  background-color: #CE84AD;
+  border-color: #CE84AD;
   margin: 5px; /* space around the buttons */
-  padding: 0 12px; /* space inside the buttons */
+  padding: 0 15px; /* space inside the buttons */
   height: 25px; /* height of the buttons */
   border-radius: 5px;
 }
@@ -58,6 +72,9 @@ main{
 .quest{
     text-align: left;
     padding: 0em 2em;
+}
+li{
+  padding: 1em;
 }
 .hint {
     font-size: 12px;
@@ -75,6 +92,13 @@ main{
   margin: -16px 0 0 0;
 }
 
+.blog_pic{
+  display: block;
+  margin: auto;
+  height: 500px;
+
+}
+
 /* STYLE NAV BAR */
 
 nav > ul{
@@ -82,7 +106,7 @@ nav > ul{
   overflow: hidden;
   padding: 1em;
   text-align: center;
-  background-color: #175676;
+  background-color: #D7D5E8;
 }
 nav > ul > li {
   display: inline;
@@ -90,12 +114,20 @@ nav > ul > li {
 nav > ul > li a {
   display: inline;
   text-decoration: none;
-  color: #CCE6F4;
+  color: #150A7A;
   font-size: 1.3em;
   padding: 2em;
 }
 nav > ul > li a:hover {
   background-color: #648DE5;
 }
-
 /*************************/
+#1{
+  background-color: #ECD8DE;
+  color: #DFE7D4;
+}
+/*************************/
+
+.padding {
+  margin: 1 em;
+}
