@@ -6,8 +6,8 @@
 /* STYLING FOR TAGS */
 body { /* this will be the default styling in the body unless it is specified otherwise */
     font-family: Trebuchet MS, Sans Serif;
-    background-color: #ECD8DE;
-    color: #150A7A;
+    background-color: #C1BDB3;
+    color: #323031;
 }
 
 header {
@@ -22,11 +22,16 @@ header {
     min-height: 100%;
     background-repeat: no-repeat;
 }
-
+.outline{
+  color: white;
+  background-color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 p {
     text-align: center;
     font-size: 18px;
     padding: 1em 2em;
+    margin: 0 2em;
 }
 
 main{
@@ -36,19 +41,20 @@ main{
 .blogTitle{
   text-align: center;
   font-weight: bold;
-  color: #653180;
+  color: #E6E2D7;
 }
 .blogBody{
   text-align: justify;
-  color: #8C66A0;
+  color: #C1BDB3;
   margin: 0 10%;
 }
 
 #survey { /* changes default background color for example page*/
-  background-color: #D1A7A0;
+  background-color: #3D3B3C;
   text-align: center;
 }
 #postFeed{
+  color: #E6E2D7;
   padding: 1em;
 }
 
@@ -65,7 +71,7 @@ main{
 
 /* PRACTICE PAGE STYLING - Mostly up to the user */
 #pract{
-    background-color: #CCE6F4;
+    background-color: #5F5B6B;
     color: #857E7B;
 
 }
@@ -106,7 +112,7 @@ nav > ul{
   overflow: hidden;
   padding: 1em;
   text-align: center;
-  background-color: #D7D5E8;
+  background-color: #302F39;
 }
 nav > ul > li {
   display: inline;
@@ -114,7 +120,7 @@ nav > ul > li {
 nav > ul > li a {
   display: inline;
   text-decoration: none;
-  color: #150A7A;
+  color: gray;
   font-size: 1.3em;
   padding: 2em;
 }
@@ -122,10 +128,6 @@ nav > ul > li a:hover {
   background-color: #648DE5;
 }
 /*************************/
-#1{
-  background-color: #ECD8DE;
-  color: #DFE7D4;
-}
 /*************************/
 
 .padding {
