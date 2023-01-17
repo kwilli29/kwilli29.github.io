@@ -13,7 +13,7 @@ body { /* this will be the default styling in the body unless it is specified ot
 header {
     color: white; /* make text in header white */
     font-weight: bold;
-    background-image: url('assets/harbor_pan.png');
+    background-image: url('https://lh3.googleusercontent.com/xUF9FytyT_w4TZaeD9qqKt07tQ3KO8CIPIuMyRkIH7bl9xTWKtjzA6nx5Nmugv0tjKaHqoqXeC93aLTznBJopFQ61JF_4viHTBubmbfJ5T_XUyoWPRDq5TIUlx-WAkPEWHcLGxFHoQ=w2400');
     text-align: center; /* center all text in the header */;
     padding: 4em; /* there will be 2em of space between the text & edges of the header on all sides */
     position: relative;
@@ -21,7 +21,7 @@ header {
     background-size: cover;
     min-height: 100%;
     background-repeat: no-repeat;
-} 
+}
 .outline{
   color: white;
   background-color: white;
