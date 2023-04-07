@@ -135,93 +135,49 @@
   <br>
   <br>
   
-<div class="row d-flex justify-content-center">
-  <div class="col-md-8 col-lg-6">
-    <div class="card shadow-0 border" style="background-color: #f0f2f5;">
-      <div class="card-body p-4">
-        <div class="form-outline mb-4">
-          <input type="text" id="addANote" class="form-control" placeholder="Type comment..." />
-          <label class="form-label" for="addANote">+ Add a note</label>
-        </div>
+	<section id="comments" class="body">
+	  <header>
+			<h2>Comments</h2>
+		</header>
+    <ol id="posts-list" class="hfeed">
+      <li><article id="comment_1" class="hentry">	
+				<footer class="post-info">
+					<abbr class="published" title="Thu, 23 Feb 2012 23:54:46 +0000">
+						23 February 2012
+					</abbr>
+					<address class="vcard author">
+						By <a class="url fn" href="#">Phil Leggetter</a>
+					</address>
+				</footer>
+				<div class="entry-content">
+					<p>The Realtime Web Rocks!</p>
+				</div>
+			</article></li>
+		</ol>
+  <div id="respond">
 
-        <div class="card mb-4">
-          <div class="card-body">
-            <p>Type your note, and hit enter to add it</p>
+  <h3>Leave a Comment</h3>
 
-            <div class="d-flex justify-content-between">
-              <div class="d-flex flex-row align-items-center">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar" width="25"
-                  height="25" />
-                <p class="small mb-0 ms-2">Martha</p>
-              </div>
-              <div class="d-flex flex-row align-items-center">
-                <p class="small text-muted mb-0">Upvote?</p>
-                <i class="far fa-thumbs-up mx-2 fa-xs text-black" style="margin-top: -0.16rem;"></i>
-                <p class="small text-muted mb-0">3</p>
-              </div>
-            </div>
-          </div>
-        </div>
+  <form action="post_comment.php" method="post" id="commentform">
 
-        <div class="card mb-4">
-          <div class="card-body">
-            <p>Type your note, and hit enter to add it</p>
+    <label for="comment_author" class="required">Your name</label>
+    <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
 
-            <div class="d-flex justify-content-between">
-              <div class="d-flex flex-row align-items-center">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar" width="25"
-                  height="25" />
-                <p class="small mb-0 ms-2">Johny</p>
-              </div>
-              <div class="d-flex flex-row align-items-center">
-                <p class="small text-muted mb-0">Upvote?</p>
-                <i class="far fa-thumbs-up mx-2 fa-xs text-black" style="margin-top: -0.16rem;"></i>
-                <p class="small text-muted mb-0">4</p>
-              </div>
-            </div>
-          </div>
-        </div>
+    <label for="email" class="required">Your email;</label>
+    <input type="email" name="email" id="email" value="" tabindex="2" required="required">
 
-        <div class="card mb-4">
-          <div class="card-body">
-            <p>Type your note, and hit enter to add it</p>
+    <label for="comment" class="required">Your message</label>
+    <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
 
-            <div class="d-flex justify-content-between">
-              <div class="d-flex flex-row align-items-center">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp" alt="avatar" width="25"
-                  height="25" />
-                <p class="small mb-0 ms-2">Mary Kate</p>
-              </div>
-              <div class="d-flex flex-row align-items-center text-primary">
-                <p class="small mb-0">Upvoted</p>
-                <i class="fas fa-thumbs-up mx-2 fa-xs" style="margin-top: -0.16rem;"></i>
-                <p class="small mb-0">2</p>
-              </div>
-            </div>
-          </div>
-        </div>
+    <-- comment_post_ID value hard-coded as 1 -->
+    <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+    <input name="submit" type="submit" value="Submit comment" />
 
-        <div class="card">
-          <div class="card-body">
-            <p>Type your note, and hit enter to add it</p>
+  </form>
 
-            <div class="d-flex justify-content-between">
-              <div class="d-flex flex-row align-items-center">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar" width="25"
-                  height="25" />
-                <p class="small mb-0 ms-2">Johny</p>
-              </div>
-              <div class="d-flex flex-row align-items-center">
-                <p class="small text-muted mb-0">Upvote?</p>
-                <i class="far fa-thumbs-up ms-2 fa-xs text-black" style="margin-top: -0.16rem;"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+</div>   
+	</section>
+
   
   <br>
   <br>
